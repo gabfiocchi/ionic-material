@@ -1,0 +1,78 @@
+<!--View Information-->
+<!--View name : Dashboard-->
+<!--Controller name : dashboardCtrl-->
+<!--Controller path : www/templates/material-user-interface/dashboard/js/controllers.js-->
+<!--State name : app.dashboard-->
+<!--URL : #app/dashboard-->
+
+<ion-view view-title="">
+
+    <!--right button on navigation bar-->
+    <ion-nav-buttons side="right">
+        <md-button class="md-icon-button ion-nav-button-right"
+                   aria-label="Setting">
+            <i class="ion-android-more-vertical"></i>
+        </md-button>
+    </ion-nav-buttons> <!--end right button on navigation bar-->
+
+    <!--toolbar section-->
+    <md-toolbar class="bar-subheader md-tall md-primary toolbar-medium">
+        <div>
+            <h1>Material Design</h1>
+
+            <h2>Ionic Material Design</h2>
+        </div>
+        <a class="md-button md-accent md-fab fab-toolbar-medium"
+           aria-label="Add">
+            <i class="icon ion-plus"></i>
+        </a>
+    </md-toolbar><!--end toolbar section-->
+
+    <!--dashboard section-->
+    <ion-content id="dashboard-content">
+
+        <!--list section-->
+        <!--Below code it will show animation when selecting row.-->
+        <md-list>
+            <md-subheader class="md-warn">Application Storage</md-subheader>
+            <md-list-item class="md-list-item-default row" ng-click="navigateTo('app.contractlist')">
+                <div class="col-25">
+                    <i class="fa fa-database"></i>
+                </div>
+                <div class="col-50">
+                    <p>SQLite DB</p>
+                </div>
+                <div class="col-25 menu-more">
+                    <i class="ion-android-more-vertical"></i>
+                </div>
+
+            </md-list-item>
+            <md-list-item class="md-list-item-default row" ng-click="navigateTo('app.notelist')">
+                <div class="col-25">
+                    <i class="fa fa-cube"></i>
+                </div>
+                <div class="col-50">
+                    <p>Local Storage DB</p>
+                </div>
+                <div class="col-25 menu-more">
+                    <i class="ion-android-more-vertical"></i>
+                </div>
+            </md-list-item>
+            <md-subheader class="md-warn">Social Network Connect</md-subheader>
+            <md-list-item class="md-list-item-default row" ng-click="navigateTo('app.wordpressLogin')">
+                <div class="col-25">
+                    <i class="fa fa-wordpress"></i>
+                </div>
+                <div class="col-50">
+                    <span>WordPress</span>
+                </div>
+                <div class="col-25 menu-more">
+                    <i class="ion-android-more-vertical"></i>
+                </div>
+
+            </md-list-item>
+
+        </md-list>
+        <!--end list section-->
+    </ion-content><!--end dashboard section-->
+</ion-view>
